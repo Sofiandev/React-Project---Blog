@@ -1,12 +1,15 @@
-import React from 'react';
+import React from "react";
 
-const Article = () => {
-    return (
-        <div className='article'>
-            <h3>ARTICLE</h3>
-            
-        </div>
-    );
+const Article = ({ article }) => {
+  return (
+    <div className="article">
+      <div className="card-header">
+        <h3>{article.author}</h3>
+        <em>Posté le {article.date}</em>
+      </div>
+      <p>{article.content}</p>
+    </div>
+  );
 };
 
 export default Article;
